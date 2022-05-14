@@ -1,5 +1,5 @@
 {
-  "name": "dailyco-api-client",
+  "name": "@maurerkrisztian/dailyco-api-client",
   "version": "1.0.0",
   "description": "NestJS api client",
   "author": "Maurer Kirsztian",
