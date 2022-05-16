@@ -19,7 +19,7 @@ export class DailycoClientModule {
             module: DailycoClientModule,
             controllers: [],
             providers: [
-               DailycoApiClient,
+                DailycoApiClient,
                 {
                     provide: 'API_OPTIONS',
                     useValue: options,

@@ -6,7 +6,7 @@ import {
   IRoomOptions,
 } from './interfaces';
 import axios, { AxiosInstance } from 'axios';
-import {IDailycoModuleOptions} from "./videocall-api.module";
+import {IDailycoModuleOptions} from "./dailyco-api.module";
 
 @Injectable()
 export class DailycoApiClient {
@@ -17,14 +17,8 @@ export class DailycoApiClient {
     TOKENS: '/meeting-tokens',
   };
 
-  // API_KEY = process.env.DAILYCO_API_KEY;
-  // API_URI = process.env.DAILYCO_API_URL;
-
   client: AxiosInstance;
-  constructor(@Inject('API_OPTIONS') private readonly options: IDailycoModuleOptions) {
-    // if (!this.API_KEY || !this.API_URI) {
-    //   throw new Error('env: DAILYCO_API_URL and DAILYCO_API_KEY is required');
-    // }
+  constructor(@Inject('API_OPTIONS')private readonly options: IDailycoModuleOptions) {
     this.client = axios.create({
       baseURL: this.options.apiurl,
       headers: {

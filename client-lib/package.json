@@ -1,6 +1,6 @@
 {
   "name": "@maurerkrisztian/dailyco-api-client",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "NestJS api client",
   "author": "Maurer Kirsztian",
   "license": "MIT",

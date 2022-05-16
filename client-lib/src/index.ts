@@ -1,4 +1,3 @@
-export * from './test';
-export * from './dailyco-api.client';
-export * from './interfaces';
-export * from './videocall-api.module';
+export * from './client/dailyco-api.client';
+export * from './client/interfaces';
+export * from './client/dailyco-api.module';
